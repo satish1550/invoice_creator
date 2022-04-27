@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>invoice creator</title>
+        <link rel="stylesheet" href="invoice.css">
+        <script src="https://kit.fontawesome.com/239698b593.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="mainbox">
+        <div class="container">
+            <header class="box-top">
+                <h1 class="box5">Invoice creator</h1>
+                <h3 class="box6">Thanks for choosing GoodCorp, LLC!</h3>
+            </header>
+            <div class="box" id="box">
+                <button class="cost-btn" id="wash-btn">Wash Car:$10</button>
+                <button class="cost-btn" id="mow-btn">Mow Lawn:$20</button>
+                <button class="cost-btn" id="pull-btn">Pull Weeds:$30</button>
+                <table class="table-box1" >
+                    <thead>
+                        <tr>
+                            <span>
+                                <th><h5>TASK</h5></th>
+                                <th><h5>TOTAL</h5></th>
+                            </span>
+                        </tr>
+                    </thead>
+                    <tbody id="tablebox">
+                    </tbody>
+                </table>
+                <hr>
+                <table class="table-box2" id="table">
+                    <thead>
+                        <tr>
+                            <span>
+                                <th><h5>NOTES</h5></th>
+                                <th><h5>TOTAL AMOUNT</h5></th>
+                            </span>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr class="box3">
+                                <td>we accept cash,credit card,or paypal</td>
+                                <td><h2>$<span id="resultAns" ></span></h2></td>
+                            </tr>
+                        </tbody>
+                </table>
+                <button class="send-btn" id="sendBtn"><i class="fa-solid fa-envelope"></i>Send invoice</button>
+            </div>
+        </div>
+        <script src="invoice.js"></script>
+    </body>
+</html>
